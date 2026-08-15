@@ -7,7 +7,7 @@ import subprocess
 import tempfile
 import shutil
 import asyncio
-import srt
+from src import srt_lite as srt
 from pathlib import Path
 
 
