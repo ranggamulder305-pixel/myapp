@@ -19,7 +19,7 @@ source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
 
 # (list) Application requirements
-requirements = python3,kivy==2.3.1,pillow,edge-tts,google-genai
+requirements = python3==3.11.9,kivy==2.3.1,pillow,edge-tts,google-genai
 
 # (str) Supported orientation (landscape, portrait or all)
 orientation = portrait
