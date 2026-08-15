@@ -29,7 +29,7 @@ jobs:
           pip install buildozer cython
 
       - name: Patch system python cgi module
-        run: sudo /usr/bin/python3 -m pip install legacy-cgi --break-system-packages
+        run: sudo /usr/bin/python3 -m pip install legacy-cgi
 
       - name: Create pip constraints (fix cgi module bug)
         run: echo "Cython>=3.0.10" > /tmp/constraints.txt
