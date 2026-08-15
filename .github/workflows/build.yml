@@ -28,7 +28,12 @@ jobs:
           pip install --upgrade pip
           pip install buildozer cython
 
+      - name: Create pip constraints (fix cgi module bug)
+        run: echo "Cython>=3.0.10" > /tmp/constraints.txt
+
       - name: Build APK
+        env:
+          PIP_CONSTRAINT: /tmp/constraints.txt
         run: |
           yes | buildozer android debug
 
